@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
-  selector: 'app-lancamento',
+  selector: 'app-lancamento-page',
   imports: [HeaderComponent],
-  templateUrl: './lancamento.component.html',
-  styleUrl: './lancamento.component.css'
+  templateUrl: './lancamento-page.component.html',
+  styleUrl: './lancamento-page.component.css'
 })
 export class LancamentoComponent {
 

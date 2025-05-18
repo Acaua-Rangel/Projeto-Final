@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RightLoginComponent } from './right-login.component';
+import { LancamentoComponent } from './lancamento-page.component';
 
-describe('RightLoginComponent', () => {
-  let component: RightLoginComponent;
-  let fixture: ComponentFixture<RightLoginComponent>;
+describe('LancamentoComponent', () => {
+  let component: LancamentoComponent;
+  let fixture: ComponentFixture<LancamentoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RightLoginComponent]
+      imports: [LancamentoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RightLoginComponent);
+    fixture = TestBed.createComponent(LancamentoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
