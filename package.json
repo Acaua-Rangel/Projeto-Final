@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Acaua-Rangel/Desafio-Angular.git"
+    "url": "git+https://github.com/Acaua-Rangel/Projeto-Final.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Acaua-Rangel/Desafio-Angular/issues"
+    "url": "https://github.com/Acaua-Rangel/Projeto-Final/issues"
   },
-  "homepage": "https://github.com/Acaua-Rangel/Desafio-Angular#readme",
+  "homepage": "https://github.com/Acaua-Rangel/Projeto-Final#readme",
   "devDependencies": {
     "concurrently": "^9.1.2"
   }
