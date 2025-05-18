@@ -1,0 +1,5 @@
+<app-header></app-header>
+<main>
+    <app-car-model [formGroup]="carForm"></app-car-model>
+    <app-vin-search (selectValue)="onSelectValue($event)"></app-vin-search>
+</main>

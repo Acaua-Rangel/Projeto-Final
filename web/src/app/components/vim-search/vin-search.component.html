@@ -1,0 +1,24 @@
+<table class="table table-bordered text-center position-end"> 
+    <thead> 
+        <tr> 
+            <th class="text-white table-bg" scope="col">Código - Vin</th> 
+            <th class="text-white table-bg" scope="col">Odômetro</th> 
+            <th class="text-white table-bg" scope="col">Nível do Combustível</th> 
+            <th class="text-white table-bg" scope="col">Status</th> 
+            <th class="text-white table-bg" scope="col">Lat.</th> 
+            <th class="text-white table-bg" scope="col">Long.</th> 
+        </tr> 
+    </thead> 
+    <tbody> 
+        <tr> 
+            <td> 
+                <input type="text" id="find-vin" class="form-control text-center" (change)="onInputChange($event)" placeholder="Procure o carro pelo VIN"/>
+            </td> 
+            <td>{{ odometer }}</td> 
+            <td>{{ fuel }}%</td> 
+            <td>{{ status }}</td> 
+            <td>{{ lat }}</td> 
+            <td>{{ long }}</td> 
+        </tr> 
+    </tbody> 
+</table>

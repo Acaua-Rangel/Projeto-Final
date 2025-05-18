@@ -1,0 +1,23 @@
+.main-section {
+    display: flex;
+    margin-top: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section img {
+    width: 50vw;
+}
+
+.main-section h1 {
+    color: #265287;
+    font-size: 64px;
+    text-align: center;
+}
+
+@media (max-width: 1150px) {
+    .main-section img {
+        width: 80vw;
+    }
+}

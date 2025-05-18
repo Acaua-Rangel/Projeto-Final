@@ -1,0 +1,9 @@
+.table-bg {
+    background-color: #094987;
+    border: 0;
+}
+
+.position-end {
+    position: relative;
+    bottom: 0;
+}
