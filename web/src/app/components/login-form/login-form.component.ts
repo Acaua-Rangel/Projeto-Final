@@ -98,7 +98,8 @@ export class LoginFormComponent {
       next: (res) => {
         this.messageError(false);
         this.saveUser(res as User, remeber);
-        this.playVideo();
+        this.router.navigate(['/']);
+        //this.playVideo();
       },
       error: (err) => this.messageError(true)
     });

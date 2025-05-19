@@ -88,6 +88,14 @@ textarea {
     resize: none;
 }
 
+.light {
+    color: #0000004c;
+}
+
+.text-wrap {
+    text-wrap: wrap;
+}
+
 @media (max-width: 820px) {
     .ranger-image {
         display: none;
