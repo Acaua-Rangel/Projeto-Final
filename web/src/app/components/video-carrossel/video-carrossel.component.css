@@ -1,0 +1,9 @@
+.zoom-video {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  transform: scale(1.1);
+  height: 100vh; 
+  display: block; 
+  margin-bottom: 30px;
+}
