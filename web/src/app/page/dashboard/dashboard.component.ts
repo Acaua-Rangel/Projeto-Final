@@ -5,10 +5,11 @@ import { VinSearchComponent } from '../../components/vim-search/vin-search.compo
 import isLogged from '../../services/islogged.service';
 import { FormControl, FormGroup,  ReactiveFormsModule} from '@angular/forms';
 import { Router } from '@angular/router';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [HeaderComponent, CarModelComponent, VinSearchComponent, ReactiveFormsModule],
+  imports: [HeaderComponent, CarModelComponent, VinSearchComponent, ReactiveFormsModule, FooterComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
