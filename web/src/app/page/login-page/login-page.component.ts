@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { RightLoginComponent } from '../../components/right-login/right-login.component'; 
+import { ContainerLoginComponent } from '../../components/container-login/container-login.component'; 
 import isLogged from '../../services/islogged.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
-  imports: [RightLoginComponent],
+  imports: [ContainerLoginComponent],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css'
 })

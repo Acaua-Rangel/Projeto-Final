@@ -20,7 +20,7 @@ app.post("/login", (req, res) => {
             });
         }
 
-        if (nome !== "admin" || senha !== "123") {
+        if (nome !== "admin" || senha !== "123456") {
             return res.status(401).json({
                 message: "O nome de usuário ou senha está incorreto ou não foi cadastrado!"
             });

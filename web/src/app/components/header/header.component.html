@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
     <div class="align-items-center container-fluid">
-      <a class="navbar-brand" [routerLink]="['/']"><img src="/logo/ford.png" alt="Logo Ford" height="40px"></a>
+      <a class="navbar-brand" [routerLink]="['/']"><img src="https://prodb2cuicontentdelivery-d0bbevfjaxfmedda.z01.azurefd.net/b2cui/assets/images/ford-logo.svg" alt="Logo Ford" height="40px"></a>
       
       <!-- Botão do menu hamburger -->
       <button class="navbar-toggler" type="button" 
@@ -13,17 +13,23 @@
       
       <!-- Itens do menu -->
       <div class="justify-content-end collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="left-nav navbar-nav">
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/lancamento']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Lancamento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contato']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contato</a>
+          </li>
           <li class="nav-item dropdown m-0" ngbDropdown>
-            <p class="nav-link dropdown-toggle" id="navbarDropdown" role="button" ngbDropdownToggle style="margin-bottom: 0px;">
-              <img src="favicon.ico" class="l-1" height="20px" alt=""> {{nome}}
-            </p>
+            <div class="nav-link dropdown-toggle user-content" id="navbarDropdown" role="button" ngbDropdownToggle style="margin-bottom: 0px;">
+              <img src="favicon.ico" class="l-1 user-image" alt=""> {{nome}}
+            </div>
             <div class="dropdown-menu-end" aria-labelledby="navbarDropdown" ngbDropdownMenu>
               <span class="dropdown-item-text">{{email}}</span>
               <div class="dropdown-divider"></div>

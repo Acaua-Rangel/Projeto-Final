@@ -1,0 +1,80 @@
+<app-header></app-header>
+<div>
+    <iframe style = "display: block; margin-bottom: 30px; margin-left: auto; margin-right: auto; width: 100%;
+    height: 500px;" src="https://www.youtube-nocookie.com/embed/vQsryuNmsL0?controls=0&autoplay=1&modestbranding=0&loop=1&mute=1&rel=0&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="cars-content">
+    <ul #lista class="modelcars">
+    </ul>
+</div>
+<div style="text-align: center;padding-bottom: 20px;">
+    <button id="compare_btn" (click)="ShowCompare()" type="button" style="height: 40px; width: 200px;">Comparar Carros</button>
+</div> 
+<dialog #compareDialog id="compare">
+    <div class="scroll-container">
+        <table>
+            <tbody>
+            <tr >
+            <td>&nbsp;</td>
+            <td><img id="compare_image_0" src="imagem_1.jpg" alt=""></td>
+            <td><img id="compare_image_1" src="imagem_2.jpg" alt=""></td>
+            </tr>
+            <tr >
+            <td>Modelo</td>
+            <td id="compare_modelo_0"></td>
+            <td id="compare_modelo_1"></td>
+            </tr>
+            <tr >
+            <td>Altura da ca&ccedil;amba (mm)</td>
+            <td id="compare_alturacacamba_0"></td>
+            <td id="compare_alturacacamba_1"></td>
+            </tr>
+            <tr >
+            <td >Altura do ve&iacute;culo (mm)</td>
+            <td id="compare_alturaveiculo_0"></td>
+            <td id="compare_alturaveiculo_1"></td>
+            </tr>
+            <tr>
+            <td>Altura livre do solo (mm)</td>
+            <td id="compare_alturasolo_0"></td>
+            <td id="compare_alturasolo_1"></td>
+            </tr>
+            <tr >
+            <td >Capacidade de carga (Kg)</td>
+            <td id="compare_capacidadecarga_0"></td>
+            <td id="compare_capacidadecarga_1"></td>
+            </tr>
+            <tr >
+            <td >Motor</td>
+            <td id="compare_motor_0"></td>
+            <td id="compare_motor_1"></td>
+            </tr>
+            <tr >
+            <td >Pot&ecirc;ncia (cv)</td>
+            <td id="compare_potencia_0"></td>
+            <td id="compare_potencia_1"></td>
+            </tr>
+            <tr >
+            <td >Volume de ca&ccedil;amba (L)</td>
+            <td id="compare_volumecacamba_0"></td>
+            <td id="compare_volumecacamba_1"></td>
+            </tr>
+            <tr >
+            <td >Roda</td>
+            <td id="compare_roda_0"></td>
+            <td id="compare_roda_1"></td>
+            </tr>
+            <tr >
+            <td >Pre&ccedil;o</td>
+            <td id="compare_preco_0"></td>
+            <td id="compare_preco_1"></td>
+            </tr>
+            </tbody>
+            
+        </table>
+    </div>
+    <div style="text-align: center;padding-bottom: 20px;">
+        <button id="close_compare" (click)="HideCompare()" type="button" style="height: 40px; width: 200px;">Fechar</button>
+    </div> 
+</dialog>   
+<app-footer></app-footer>
