@@ -72,6 +72,6 @@ export class CarModelComponent implements OnInit {
     if (this.index >= 0 && this.index < Object.keys(this.data).length) {
       return this.data[this.index].img.toString();
     } 
-    return this.data[0].img.toString();
+    return this.data[0]?.img.toString();
   }
 }
