@@ -1,6 +1,56 @@
 <app-header></app-header>
 <main class="main-section">
-    <h1>Seja bem vindo(a)!</h1>
-    <img src="ranger.png" alt="">
+    <section class="text-black text-center py-5">
+        <div class="main-container container">
+            <h1 class="display-4 fw-bold">Bem-vindo à Ford Experience</h1>
+            <p class="lead">Tecnologia, inovação e desempenho em cada detalhe.</p>
+            <a href="#modelos" class="main-btn">Conheça nossos modelos</a>
+        </div>
+    </section>
+
+  <section id="modelos" class="py-5 rounded">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Modelos em Destaque</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="http://localhost:3001/mustang.png" class="card-img-top" alt="Mustang">
+            <div class="card-body">
+              <h5 class="card-title">Ford Mustang</h5>
+              <p class="card-text">Potência e design icônico para quem ama performance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="http://localhost:3001/ranger.png" class="card-img-top" alt="Ranger">
+            <div class="card-body">
+              <h5 class="card-title">Ford Ranger</h5>
+              <p class="card-text">Força e robustez para qualquer desafio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="http://localhost:3001/broncoSport.png" class="card-img-top" alt="Bronco">
+            <div class="card-body">
+              <h5 class="card-title">Ford Bronco</h5>
+              <p class="card-text">Aventura sem limites com estilo e potência.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="py-5 text-center bg-white">
+    <div class="container">
+      <h2 class="fw-bold mb-4">A tradição Ford</h2>
+      <p class="lead text-muted">
+        Há mais de 100 anos, a Ford transforma o futuro da mobilidade com inovação, qualidade e compromisso com a sustentabilidade.
+      </p>
+    </div>
+  </section>
 </main>
 <app-footer></app-footer>

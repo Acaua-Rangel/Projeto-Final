@@ -1,0 +1,136 @@
+.cars-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0px;
+}
+
+ul.modelcars {
+    text-align: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+ul.modelcars li {
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+
+img.photocar {
+    width: 250px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1b357e;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.textmodel {
+    text-align: left;
+    font-size: 14px;
+    color: #1351d8;
+    
+}
+.textprice {
+    text-align: left;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+td:nth-child(1) {  
+    font-weight: 700;
+    width: 40%;
+}
+
+div#compare {
+    position: absolute;
+    display: none;
+    width: 50vw;
+    max-width: 800px;
+    min-width: 400px;
+    height: 80vh;
+    max-height: 700px;
+    min-height: 350px;
+    background: #fff;
+    top: calc(100vh - 80%);
+    left: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+    box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+}
+
+.scroll-container {
+    max-width: 90vw; /* Define um tamanho máximo */
+    overflow-x: auto; /* Permite o scroll horizontal */
+    padding: 10px;
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap; /* Evita quebra de linha nos textos */
+}
+
+td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+}
+
+#compare_image_0,
+#compare_image_1 {
+    width: 300px;
+    height: auto;
+}
+
+dialog {
+    position: fixed;
+    top: 10px;
+    max-width: 95vw;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#compare_btn, #close_compare {
+    height: 40px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 0 32px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    background-color: #00095b;
+}
