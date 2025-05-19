@@ -3,10 +3,11 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { Router } from '@angular/router';
 import isLogged from '../../services/islogged.service';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { CarrosselFerrariComponent } from '../../components/carrossel-ferrari/carrossel-ferrari.component';
 
 @Component({
   selector: 'app-welcome-page',
-  imports: [HeaderComponent, FooterComponent],
+  imports: [HeaderComponent, FooterComponent, CarrosselFerrariComponent],
   templateUrl: './welcome-page.component.html',
   styleUrl: './welcome-page.component.css'
 })
