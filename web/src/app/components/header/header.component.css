@@ -1,0 +1,24 @@
+.user-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.user-image {
+    border-radius: 12.5px;
+    height: 25px;
+}
+
+.left-nav li a {
+    color: #1b394e;
+}
+
+.left-nav li a.active {
+    color: #0C1922;
+}
+
+@media (min-width: 992px) {
+    .left-nav {
+        align-items: center;
+    }
+}
