@@ -5,12 +5,31 @@
     </div>
     <div class="form-floating">
         <input type="password" id="password" class="input-box form-control" placeholder="Digite sua senha aqui" required>
-        <label for="password">Senha</label>
+      <label for="password">Senha</label>
     </div>
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
         <label class="form-check-label" for="flexSwitchCheckDefault">Lembrar de mim</label>
     </div>
     <p id="message-error">Nome de usuário e/ou senha incorreto(s)</p>
-    <button type="button" (click)="submit($event)">Conectar</button>
+    <button class="submit" type="button" (click)="submit($event)">Conectar</button>
 </form>
+<video
+  *ngIf="videoStarted"
+  #videoPlayer
+  src="ford-raptor.mp4"
+  class="video-fullscreen"
+  (ended)="onVideoEnded()"
+  autoplay
+  muted="false"
+  playsinline
+>
+</video>
+
+<button
+  *ngIf="videoStarted"
+  class="skip-button"
+  (click)="skipVideo()"
+>
+  Pular vídeo
+</button>

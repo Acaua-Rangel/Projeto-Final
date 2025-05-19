@@ -15,7 +15,7 @@ form {
     background-color: white;
 }
 
-button {
+.submit {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -36,6 +36,36 @@ button {
 
 .form-floating {
     width: 100%;
+}
+
+.video-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.skip-button {
+  position: fixed;
+  bottom: 20vh;
+  right: 20px;
+  z-index: 10000;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 150px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.skip-button:hover {
+    opacity: 70%;
+    transition: 200ms;
 }
 
 @media (max-width:600px) {
