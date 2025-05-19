@@ -72,7 +72,7 @@ Desafio-Angular/
 
 ---
 
-## ▶️ Como Executar o Projeto
+## Como Executar o Projeto
 
 1. **Clone o repositório:**
 
@@ -98,14 +98,14 @@ npm run start           # Roda simultaneamente a API e o front-end
 
 ---
 
-## 🔗 Endpoints Utilizados
+## Endpoints Utilizados
 
 * `GET /vehicle` → Listagem dos modelos
 * `GET /vehicleData` → Informações detalhadas dos veículos
 
 ---
 
-## ✅ Critérios Técnicos
+## Critérios Técnicos
 
 * Uso adequado de módulos, componentes e serviços no Angular
 * Diretivas Angular: `*ngIf`, `*ngFor`, `ngModel`, etc.
@@ -116,7 +116,7 @@ npm run start           # Roda simultaneamente a API e o front-end
 
 ---
 
-## 📌 Considerações Finais
+## Considerações Finais
 
 Este projeto foi desenvolvido com fins educacionais, como parte do programa **Ford Enter**, simulando uma solução real para uma montadora de veículos. A base de dados foi fornecida pela **API de Benjamim**, e toda a lógica e interface foram implementadas com os conhecimentos adquiridos no curso.
 
