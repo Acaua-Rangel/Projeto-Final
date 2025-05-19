@@ -5,6 +5,21 @@ main {
     min-height: 100vh;
 }
 
+.fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://neweralive.na/wp-content/uploads/2024/06/ranger-1.gif');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+  /* Aplica o desfoque no fundo */
+  filter: blur(10px);
+}
+
 img {
     width: 40vw;
 }

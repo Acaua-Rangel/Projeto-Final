@@ -14,7 +14,6 @@ export class WelcomePageComponent implements OnInit{
 
   ngOnInit(): void {
     if (!isLogged()) {
-      console.log("oi")
       this.router.navigate(['/login']);
     }
   }
