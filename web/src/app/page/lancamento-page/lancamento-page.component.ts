@@ -1,6 +1,9 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import isLogged from '../../services/islogged.service';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lancamento-page',
@@ -9,9 +12,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
   styleUrl: './lancamento-page.component.css',
   encapsulation: ViewEncapsulation.None,
 })
-export class LancamentoComponent implements AfterViewInit {
+export class LancamentoComponent implements OnInit, AfterViewInit {
   @ViewChild('lista', { static: false }) lista!: ElementRef<HTMLUListElement>;
   @ViewChild('compareDialog', { static: false }) dialog!: ElementRef<HTMLDialogElement>;
+
+  constructor(private router: Router) {}
+
+
   items = [
     {
       name: "cabine",
@@ -60,6 +67,12 @@ export class LancamentoComponent implements AfterViewInit {
 
   closeBtn = document.getElementById("close_compare");
 
+  ngOnInit(): void {
+    if (!isLogged()) {
+      this.router.navigate(['/login']);
+    }
+  }
+  
   ngAfterViewInit() {
     this.items.forEach((item, index) => {
         this.createItem(item, index);
