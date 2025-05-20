@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://db.onlinewebfonts.com/c/ad83d656eb8b7bdf15692d406ca6c5fb?family=Ford+Antenna+Cond+Light'); 
+@import url('https://db.onlinewebfonts.com/c/9bf8d97dc76c21ccf6da3143e3d3ea5f?family=Ford+Antenna+Cond+Bold');
 
 * {
-    font-family: "Kanit", sans-serif;
+    font-family: "Ford Antenna Cond Light", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 }

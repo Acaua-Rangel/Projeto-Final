@@ -1,0 +1,61 @@
+* {
+    font-weight: 600;
+}
+/* Estilos para o navbar e carrossel */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: white;
+}
+
+.video-carrossel-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos para o menu lateral em mobile */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 56px; /* Altura do navbar */
+    left: 0;
+    width: 75%;
+    height: calc(100vh - 56px);
+    background-color: #343a40;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-collapse:not(.show) {
+    transform: translateX(-100%);
+    display: block !important; /* Mantém o elemento no DOM para a animação */
+  }
+  
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+  
+  .navbar-nav {
+    flex-direction: column !important;
+  }
+  
+  .dropdown-menu {
+    position: static !important;
+  }
+}
+
+.white-svg {
+  filter: brightness(0) invert(1);
+}
