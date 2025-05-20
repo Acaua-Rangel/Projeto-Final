@@ -1,103 +1,123 @@
-# Desafio Angular - Dashboard FORD
+# Projeto Final - FORD Enter
 
-Este projeto é o resultado do desafio proposto na **Sprint 07 de Angular** da formação em programação Front-End, que consiste na criação de um dashboard interativo para a empresa FORD, utilizando **Angular** e **TypeScript**.
+**Projeto Final — Programa Ford Enter | Front-End Angular**
 
-## Objetivo
-
-Desenvolver uma aplicação Angular com foco em componentes reativos e consumo de API REST, seguindo boas práticas de arquitetura e interatividade. O projeto simula um painel administrativo com funcionalidades de login, visualização de dados e gráficos relacionados aos veículos da empresa.
+Este repositório apresenta o **Ford Experience**, um projeto desenvolvido como **atividade final do programa Ford Enter**, com foco em **desenvolvimento Front-End utilizando Angular**. A aplicação simula um painel moderno e interativo voltado à experiência digital de usuários da Ford, com funcionalidades reais de autenticação, visualização de veículos, comparação entre modelos e contato com a empresa.
 
 ---
 
-## Estrutura do Projeto
+## Objetivo do Projeto
 
-O projeto está dividido em dois diretórios principais:
+O objetivo principal foi aplicar, de forma prática, os conhecimentos adquiridos ao longo da formação, utilizando tecnologias modernas como Angular, HTML, CSS, JavaScript, TypeScript e metodologias ágeis como **Scrum**.
 
-- `web/`: Aplicação Angular responsável pelo front-end.
-- `api-angular-ford/`: Back-end em Node.js fornecido para simulação da API REST.
+Além disso, o projeto aborda aspectos importantes da **LGPD (Lei Geral de Proteção de Dados)**, como exibição de termos de uso e política de privacidade, garantindo uma navegação segura e transparente para os usuários.
 
 ---
 
 ## Funcionalidades
 
-### Login
-- Formulário de autenticação com validação simples.
-- Usuário e senha fixos:  
-  - **Usuário**: `admin`  
-  - **Senha**: `123`
+* **Login com autenticação simulada**
 
-### Página Home
-- Boas-vindas personalizadas.
-- Opção de logout.
-- Imagem de fundo.
-- Link para o dashboard.
+  * Usuário: `admin`
+  * Senha: `123456`
 
-### Dashboard
-- Campo de busca por modelo de veículo.
-- Cartões com:
-  - Total de vendas.
-  - Veículos conectados.
-  - Veículos com software atualizado.
-- Imagem do veículo selecionado.
-- Tabela com busca por código e exibição de dados detalhados.
+* **Página Inicial personalizada**
+
+  * Boas-vindas ao usuário logado
+  * Botão de acesso aos modelos
+  * Interface limpa, responsiva e intuitiva
+
+* **Visualização de veículos**
+
+  * Modelos em destaque
+  * Consulta por nome ou código
+  * Dados detalhados (software, conectividade, vendas)
+
+* **Comparação entre veículos**
+
+  * Seleção dinâmica de dois veículos
+  * Visualização lado a lado de suas especificações
+
+* **Termos de Uso e Política de Privacidade**
+
+  * Informações claras sobre tratamento de dados
+  * Alinhado à LGPD
+
+* **Formulário de Contato**
+
+  * Envio de dúvidas e sugestões
+  * Validação de campos
 
 ---
 
-## Tecnologias Utilizadas
+## Tecnologias e Ferramentas
 
-- [Angular CLI 19.2.7](https://angular.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [RxJS](https://rxjs.dev/)
-- [Bootstrap](https://getbootstrap.com/)
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [Concurrently](https://www.npmjs.com/package/concurrently)
+* [Angular 19.2.7](https://angular.io/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [RxJS](https://rxjs.dev/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Node.js + Express (API simulada)](https://expressjs.com/)
+* [Git e GitHub](https://github.com/)
+* Metodologias Ágeis com **Scrum**
 
 ---
 
-## Instalação e Execução
+## Estrutura do Projeto
 
-1. **Clone este repositório:**
+```
+Desafio-Angular/
+├── web/                 # Front-end Angular
+└── api/    # API REST simulada com Node.js
+```
+
+---
+
+## Como Executar o Projeto
+
+1. **Clone o repositório:**
 
 ```bash
 git clone https://github.com/Acaua-Rangel/Desafio-Angular.git
 cd Desafio-Angular
-````
-
-2. **Baixe e instale as dependências:**
-
-```bash
-npm run build:api       # Clona a API
-npm run install         # Instala as dependências da API e do Front-end
 ```
 
-3. **Inicie o projeto:**
+2. **Instale as dependências:**
 
 ```bash
-npm run start           # Inicia simultaneamente a API e o front-end
+npm run install         # Instala dependências da API e do Front-end
 ```
 
-* Acesse o front-end em: `http://localhost:4200`
-* A API estará disponível em: `http://localhost:3001`
+3. **Inicie a aplicação:**
+
+```bash
+npm run start           # Roda simultaneamente a API e o front-end
+```
+
+* Acesse a interface: `http://localhost:4200`
+* API disponível em: `http://localhost:3001`
 
 ---
 
 ## Endpoints Utilizados
 
-* `GET /vehicle`: Lista de veículos
-* `GET /vehicleData`: Dados detalhados dos veículos
+* `GET /vehicle` → Listagem dos modelos
+* `GET /vehicleData` → Informações detalhadas dos veículos
 
 ---
 
-## Critérios Avaliados
+## Critérios Técnicos
 
-* Uso correto de módulos, componentes e serviços Angular.
-* Implementação de diretivas como `*ngIf`, `*ngFor`, `ngModel`.
-* Integração com API REST.
-* Utilização de RxJS com operadores como `map`, `filter`, `debounceTime`, etc.
-* Boas práticas com TypeScript e Bootstrap.
+* Uso adequado de módulos, componentes e serviços no Angular
+* Diretivas Angular: `*ngIf`, `*ngFor`, `ngModel`, etc.
+* Boas práticas com RxJS: `map`, `filter`, `debounceTime`
+* Componentização e organização do código
+* Validação de formulários
+* Design responsivo e acessível
 
 ---
 
-## Observações
+## Considerações Finais
 
-Este projeto foi desenvolvido com fins educacionais, com base na proposta da empresa FORD fornecida pela instituição.
+Este projeto foi desenvolvido com fins educacionais, como parte do programa **Ford Enter**, simulando uma solução real para uma montadora de veículos. A base de dados foi fornecida pela **API de Benjamim**, e toda a lógica e interface foram implementadas com os conhecimentos adquiridos no curso.
+
+> O Ford Experience representa a aplicação prática de tudo o que aprendi em **HTML, CSS, JavaScript, Angular, GitHub e metodologias ágeis**, incluindo aspectos de usabilidade, acessibilidade, privacidade e performance.

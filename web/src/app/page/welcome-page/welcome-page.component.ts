@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
 import { Router } from '@angular/router';
 import isLogged from '../../services/islogged.service';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { HeaderHomeComponent } from '../../components/header-home/header-home.component';
 
 @Component({
   selector: 'app-welcome-page',
-  imports: [HeaderComponent, FooterComponent],
+  imports: [FooterComponent, HeaderHomeComponent],
   templateUrl: './welcome-page.component.html',
   styleUrl: './welcome-page.component.css'
 })

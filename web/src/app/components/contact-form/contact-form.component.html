@@ -4,7 +4,7 @@
             <img class="ranger-image" src="ranger.png">
         </div>
         <div>
-            <form>
+            <form style="width: 300px;">
                 <h2 class="titulo">CONTATO</h2>
                 <input type="text" [ngModel]="nome" [ngModelOptions]="{standalone: true}" name="nome" placeholder="NOME*" class="fordform" required>
                 <input type="email" [ngModel]="email" [ngModelOptions]="{standalone: true}" name="email" placeholder="E-MAIL*" class="fordform" required>
@@ -17,6 +17,15 @@
                     <option value="solicitacao">SOLITAÇÃO</option>
                 </select>
                 <textarea name="mensagem" [(ngModel)]="mensagem" [ngModelOptions]="{standalone: true}" placeholder="MENSAGEM*" class="fordform" style="height: 50px;" required></textarea>
+                <p class="text-wrap light">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A qualquer momento, será possível editar ou remover tais dados. <a class="anchor" href="https://www.ford.com.br/politica-de-privacidade/">Termos e Condições</a></p>
+                <label>
+                    <input type="checkbox" id="check1"> Sim. Li e concordo com os Termos e Condições.
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="check2"> Sim. Também quero receber ofertas e novidades.
+                </label>
+                <br><br>
                 <button id="btnSubmit" type="submit" (click)="updateValuesBtn($event)">Enviar</button>
             </form>
         </div>

@@ -6,14 +6,35 @@
     align-items: center;
 }
 
-.main-section img {
-    width: 50vw;
-}
-
 .main-section h1 {
-    color: #265287;
+    color: #102b4e;
     font-size: 64px;
     text-align: center;
+}
+
+.main-btn {
+    display: flex; /* Flexbox para centralizar */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 40px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 0 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    background-color: #00095b;
+    width: fit-content;
+
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1150px) {
