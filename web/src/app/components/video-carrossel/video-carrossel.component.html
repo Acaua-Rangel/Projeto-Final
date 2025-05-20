@@ -1,0 +1,11 @@
+<div 
+class="d-flex overflow-hidden position-relative" 
+style="width: 100%;"> 
+    <div class="d-flex transition-transform" [ngStyle]="{ transform: 'translateX(-' + currentIndex * 100 + '%)' }" style="width: 100%;"> 
+        <div *ngFor="let video of videos" class="flex-shrink-0"> 
+            <video #videoPlayer class="zoom-video" [src]="video" (ended)="onVideoEnded()" autoplay muted playsinline> 
+
+            </video> 
+        </div> 
+    </div> 
+</div>
