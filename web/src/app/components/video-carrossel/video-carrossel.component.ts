@@ -10,7 +10,8 @@ import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 export class VideoCarrosselComponent {
   videos: string[] = [
     'ford-banner.mp4',
-    'ford-raptor.mp4'
+    'ford-bronco.mp4',
+    'ford-mustang.mp4'
   ];
 
   currentIndex = 0;

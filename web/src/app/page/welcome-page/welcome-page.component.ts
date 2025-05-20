@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import isLogged from '../../services/islogged.service';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { VideoCarrosselComponent } from '../../components/video-carrossel/video-carrossel.component';
+import { HeaderHomeComponent } from '../../components/header-home/header-home.component';
 
 @Component({
   selector: 'app-welcome-page',
-  imports: [FooterComponent, VideoCarrosselComponent],
+  imports: [FooterComponent, HeaderHomeComponent],
   templateUrl: './welcome-page.component.html',
   styleUrl: './welcome-page.component.css'
 })
