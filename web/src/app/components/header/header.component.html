@@ -28,9 +28,10 @@
           </li>
           <li class="nav-item dropdown m-0" ngbDropdown>
             <div class="nav-link dropdown-toggle user-content" id="navbarDropdown" role="button" ngbDropdownToggle style="margin-bottom: 0px;">
-              <img src="favicon.ico" class="l-1 user-image" alt=""> {{nome}}
+              <img src="favicon.ico" class="l-1 user-image" alt="">
             </div>
             <div class="dropdown-menu-end" aria-labelledby="navbarDropdown" ngbDropdownMenu>
+              <span class="dropdown-item-text">{{nome}}</span>
               <span class="dropdown-item-text">{{email}}</span>
               <div class="dropdown-divider"></div>
               <button class="dropdown-item" (click)="logOut($event)">Sair</button>
